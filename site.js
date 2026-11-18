@@ -6,5 +6,5 @@ if (release) {
   document.querySelector('[data-download]').href = folder + release.filename + '.zip'
   document.querySelector('[data-checksum]').href = folder + release.filename + '.sha256'
   document.querySelector('[data-release]').href = repo + '/releases'
-  document.querySelector('[data-version]').textContent = `· ${release.version}${release.sizeMB ? ` · ${release.sizeMB} MB` : ''}`
+  document.querySelector('[data-version]').textContent = `${release.version}${release.sizeMB ? ` · ${release.sizeMB} MB` : ''}`
 }
