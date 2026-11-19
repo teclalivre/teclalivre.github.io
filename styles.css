@@ -37,12 +37,14 @@ p, ol { line-height: 1.6; color: #c6bdcf; }
 .install ol { margin: 0; padding: 3px 0 0 21px; }
 .install li + li { margin-top: 10px; }
 .site-footer { border-top: 1px solid #302639; }
+.site-footer nav { flex-wrap: wrap; }
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; padding: 35px 0 44px; }
   .hero-copy > p:first-of-type { max-width: 52ch; }
   .feature-grid { grid-template-columns: 1fr; gap: 28px; }
   .features { padding: 39px 0 45px; }
   .install { grid-template-columns: 1fr; gap: 16px; padding: 42px 0; }
+  .site-footer { flex-wrap: wrap; gap: 16px; padding-block: 20px; }
 }
 @media (max-width: 400px) {
   .site-header, .site-footer { gap: 12px; }
