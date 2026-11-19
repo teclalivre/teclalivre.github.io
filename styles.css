@@ -9,7 +9,9 @@ img { display: block; max-width: 100%; }
 .site-header, .site-footer { display: flex; align-items: center; gap: 32px; justify-content: space-between; min-height: 86px; }
 .site-header { border-bottom: 1px solid #302639; }
 .site-header nav, .site-footer nav { display: flex; gap: 22px; color: #d1c7da; white-space: nowrap; }
+.site-header nav { align-items: center; }
 .site-header nav a:hover, .text-link:hover { color: #fff; }
+.language-link { padding: 4px 0 4px 16px; border-inline-start: 1px solid #5b4873; color: #d4baf7; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 750; white-space: nowrap; letter-spacing: -.025em; }
 .hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 68px); align-items: center; padding: 68px 0 78px; }
 .hero-copy { padding: 12px 0; }
@@ -46,8 +48,9 @@ p, ol { line-height: 1.6; color: #c6bdcf; }
   .install { grid-template-columns: 1fr; gap: 16px; padding: 42px 0; }
   .site-footer { flex-wrap: wrap; gap: 16px; padding-block: 20px; }
 }
-@media (max-width: 400px) {
-  .site-header, .site-footer { gap: 12px; }
-  .site-header nav, .site-footer nav { gap: 14px; font-size: 13px; }
+@media (max-width: 520px) {
+  .site-header { flex-wrap: wrap; gap: 12px; padding-block: 16px; }
+  .site-header nav, .site-footer nav { flex-wrap: wrap; gap: 14px; font-size: 14px; }
+  .language-link { padding-inline-start: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
