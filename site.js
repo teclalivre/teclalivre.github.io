@@ -8,3 +8,17 @@ if (release?.filename) {
   document.querySelector('[data-release]').href = repo + '/releases'
   document.querySelector('[data-version]').textContent = `${release.version}${release.sizeMB ? ` · ${release.sizeMB} MB` : ''}`
 }
+
+const languagePicker = document.querySelector('.language-picker')
+if (languagePicker) {
+  const trigger = languagePicker.querySelector('summary')
+  document.addEventListener('click', (event) => {
+    if (languagePicker.open && !languagePicker.contains(event.target)) languagePicker.open = false
+  })
+  languagePicker.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && languagePicker.open) {
+      languagePicker.open = false
+      trigger.focus()
+    }
+  })
+}

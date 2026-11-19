@@ -11,9 +11,9 @@
   <link rel="alternate" hreflang="en-US" href="https://teclalivre.github.io/en/">
   <link rel="alternate" hreflang="x-default" href="https://teclalivre.github.io/">
   <link rel="icon" type="image/svg+xml" href="../assets/marca.svg">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=language-picker">
   <script src="../release-info.js" defer></script>
-  <script src="../site.js" defer></script>
+  <script src="../site.js?v=language-picker" defer></script>
 </head>
 <body>
   <header class="site-header wrap">
@@ -21,8 +21,18 @@
     <nav aria-label="Navigation">
       <a href="#features">Features</a>
       <a href="#install">How to install</a>
-      <a class="language-link" href="../" lang="pt-BR" hreflang="pt-BR">Português</a>
     </nav>
+    <details class="language-picker">
+      <summary aria-label="Language: English (US)">
+        <img class="language-flag" src="../assets/flag-us.svg" width="22" height="15" alt="">
+        <span>English</span>
+        <svg class="language-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <ul class="language-options" aria-label="Languages">
+        <li><a href="../?lang=pt-BR" lang="pt-BR" hreflang="pt-BR"><img class="language-flag" src="../assets/flag-br.svg" width="22" height="15" alt=""> Português (Brasil)</a></li>
+        <li><a href="./?lang=en-US" lang="en-US" hreflang="en-US" aria-current="page"><img class="language-flag" src="../assets/flag-us.svg" width="22" height="15" alt=""> English (US)</a></li>
+      </ul>
+    </details>
   </header>
 
   <main id="home">
